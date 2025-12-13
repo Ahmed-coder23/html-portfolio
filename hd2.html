@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitZone Gym</title>
+
+<style>
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+}
+header {
+    background:#6a11cb;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+nav a {
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.hero {
+    background:url('gym-hero.jpg') center/cover no-repeat;
+    height:400px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:rgb(19, 18, 18);
+    font-size:36px;
+    font-weight:bold;
+    text-shadow:2px 2px 5px rgba(0,0,0,0.5);
+}
+section {
+    padding:40px 20px;
+    text-align:center;
+}
+section h2 {
+    margin-bottom:20px;
+    color:#333;
+}
+.cards {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+.card {
+    background:white;
+    width:250px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    overflow:hidden;
+}
+.card img {
+    width:100%;
+    height:150px;
+    object-fit:cover;
+}
+.card h3 {
+    margin:15px 0 5px 0;
+}
+.card p {
+    padding:0 10px 10px 10px;
+    color:#666;
+}
+footer {
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+button {
+    padding:10px 20px;
+    border:none;
+    border-radius:10px;
+    background:#6a11cb;
+    color:white;
+    cursor:pointer;
+}
+button:hover {
+    background:#2575fc;
+}
+</style>
+</head>
+<body>
+<a href="./5.3 CSS Selectors/Join.html">
+  <button>login</button>
+</a>
+<header>
+    <h1>FitZone Gym</h1>
+    <nav>
+        <a href="#about">عن الجيم</a>
+        <a href="#plans">الاشتراكات</a>
+        <a href="#contact">تواصل معنا</a>
+    </nav>
+</header>
+
+<div class="hero">
+    انضم الآن وابدأ لياقتك!
+</div>
+
+<section id="about">
+    <h2>عن الجيم</h2>
+    <p>FitZone Gym يوفر لك أحدث الأجهزة وخطط تدريب مخصصة لجميع المستويات.</p>
+    <div class="cards">
+        <div class="card">
+            <img src="./download.webp" alt="Gym Image">
+            <h3>صالة القوة</h3>
+            <p>معدات حديثة لتقوية العضلات لجميع المستويات.</p>
+        </div>
+        <div class="card">
+            <img src="./OIP (1).webp" alt="Gym Image">
+            <h3>الكارديو</h3>
+            <p>أجهزة كارديو حديثة لتحسين اللياقة البدنية.</p>
+        </div>
+        <div class="card">
+            <img src="./OIP.webp" alt="Gym Image">
+            <h3>صفوف تدريب جماعية</h3>
+            <p>يوغا، زومبا، وكروس فت.</p>
+        </div>
+    </div>
+</section>
+
+<section id="plans">
+    <h2>خطط الاشتراك</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>شهري</h3>
+            <p>1000 جنيه / شهر</p>
+            <button onclick="alert('تم اختيار خطة شهرية')">اشترك الآن</button>
+        </div>
+        <div class="card">
+            <h3>ربع سنوي</h3>
+            <p>2500 جنيه / 3 شهور</p>
+            <button onclick="alert('تم اختيار خطة ربع سنوي')">اشترك الآن</button>
+        </div>
+        <div class="card">
+            <h3>سنوي</h3>
+            <p>9000 جنيه / سنة</p>
+            <button onclick="alert('تم اختيار خطة سنوية')">اشترك الآن</button>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>تواصل معنا</h2>
+    <p>الهاتف: 0123456789 | البريد: info@fitzone.com</p>
+    <button onclick="alert('شكراً لتواصلك!')">راسلنا الآن</button>
+</section>
+
+<footer>
+    &copy; 2025 FitZone Gym. جميع الحقوق محفوظة.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأسعار وخيارات الدفع</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .pricing-container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            width: 400px;
+            text-align: center;
+        }
+
+        .pricing-container h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .price {
+            font-size: 24px;
+            margin: 20px 0;
+            color: #6a11cb;
+        }
+
+        .payment-btn {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            color: #fff;
+            transition: 0.3s;
+        }
+
+        .visa {
+            background-color: #1a73e8;
+        }
+
+        .vodafone {
+            background-color: #e60000;
+        }
+
+        .payment-btn:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="pricing-container">
+        <h1>الأسعار وخيارات الدفع</h1>
+        <p class="price">20usd</p>
+         <p class="price">40usd</p>
+          <p class="price">60usd</p>
+
+        <button class="payment-btn visa" onclick="alert('تم اختيار فيزا')">الدفع بفيزا</button>
+        <button class="payment-btn vodafone" onclick="alert('تم اختيار فودافون كاش')">الدفع بفودافون كاش</button>
+    </div>
+</body>
+</html>
